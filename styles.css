@@ -1,0 +1,124 @@
+:root {
+  --bg-color: #0f172a;
+  --card-bg: #1e293b;
+  --text-color: #f8fafc;
+  --accent-color: #38bdf8;
+  --border-color: #334155;
+}
+
+body {
+  margin: 0;
+  padding: 2rem 1rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 680px;
+  width: 100%;
+}
+
+.perfil {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 3px solid var(--accent-color);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  margin: 1rem 0 0.25rem 0;
+  font-size: 1.75rem;
+}
+
+.subtitulo {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  margin-top: 0;
+}
+
+.bio {
+  background: var(--card-bg);
+  padding: 1.25rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.card h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.card p {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.acao-interativa {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+button {
+  background-color: var(--accent-color);
+  color: #0f172a;
+  font-family: 'Fira Code', monospace;
+  font-weight: 600;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: filter 0.2s ease;
+}
+
+button:hover {
+  filter: brightness(1.15);
+}
+
+.msg-oculta {
+  display: none;
+  font-family: 'Fira Code', monospace;
+  color: var(--accent-color);
+  margin-top: 0.75rem;
+}
+
+.msg-visivel {
+  display: block;
+}
+
+/* Estado acionado pelo JavaScript */
+body.modo-destaque {
+  --bg-color: #18181b;
+  --accent-color: #a855f7;
+}

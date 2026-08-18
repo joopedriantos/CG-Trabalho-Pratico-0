@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>João Pedro | Perfil Dev</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="container">
+    <header class="perfil">
+      <img id="foto-perfil" src="./cavalo.jpeg" alt="Foto de perfil" class="avatar">
+      <h1>Olá, me chamo João Pedro 👋</h1>
+      <p class="subtitulo">Estudante de Engenharia & Entusiasta de Desenvolvimento</p>
+    </header>
+
+    <section class="bio">
+      <p>
+        Movido a café, código e resolução de problemas. Gosto de explorar 
+        desenvolvimento web, arquitetura de sistemas e gráficos interativos.
+      </p>
+    </section>
+
+    <section class="curiosidades">
+      <h2>Curiosidades & Interesses</h2>
+      <div class="grid-cards">
+        <div class="card">
+          <span class="icone">💻</span>
+          <h3>Setup & Dev</h3>
+          <p>Fã de código limpo, hardware sob medida e projetos desafiadores.</p>
+        </div>
+        <div class="card">
+          <span class="icone">🎮</span>
+          <h3>Games & Lazer</h3>
+          <p>Partidas competitivas nas horas vagas e foco em side quests.</p>
+        </div>
+        <div class="card">
+          <span class="icone">🎸</span>
+          <h3>Música</h3>
+          <p>Rock, cifras no violão e fones sempre no volume máximo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="acao-interativa">
+      <button id="btn-interativo">⚡ Alternar Tema / Foto</button>
+      <p id="status-interacao" class="msg-oculta">Modo Turbo Ativado!</p>
+    </section>
+  </main>
+
+  <script>
+    const botao = document.getElementById('btn-interativo');
+    const foto = document.getElementById('foto-perfil');
+    const statusTexto = document.getElementById('status-interacao');
+
+    botao.addEventListener('click', () => {
+      document.body.classList.toggle('modo-destaque');
+      statusTexto.classList.toggle('msg-visivel');
+      
+      // Exemplo: alterna a imagem se desejar
+      // foto.src = foto.src.includes('foto.jpg') ? 'foto-gato.jpg' : 'foto.jpg';
+    });
+  </script>
+</body>
+</html>
