@@ -25,8 +25,6 @@ Página web estática desenvolvida como introdução ao ambiente de desenvolvime
 
 A página publicada e funcional pode ser acessada diretamente via GitHub Pages:
 
-🔗 **[Acessar Minha Página Web](https://joopedriantos.github.io/CG-Trabalho-Pratico-0/)**
-
 ---
 
 ## 📂 Estrutura de Arquivos
