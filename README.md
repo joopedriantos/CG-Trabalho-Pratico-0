@@ -8,7 +8,7 @@ Página web estática desenvolvida como introdução ao ambiente de desenvolvime
 
 ## 📌 Nota sobre a Nomenclatura do Repositório
 
-> **Aviso:** Notei após a criação inicial e publicação que o enunciado sugeria/padronizava o nome do repositório como `utf-cg-tp0`. Para evitar qualquer quebra de links já gerados no GitHub Pages, possíveis conflitos de sincronização local com o Git ou problemas de cache no deploy ativo, optei por manter o repositório sob o nome atual (`CG-Trabalho-Pratico-0`).
+> **Aviso:** Notei após a criação inicial e publicação que o enunciado sugeria/padronizava o nome do repositório como `utf-cg-tp0`. Para evitar qualquer quebra de links já gerados no GitHub Pages, possíveis conflitos de sincronização local com o Git ou perda dos commits criando outro repo, optei por manter o repositório sob o nome atual (`CG-Trabalho-Pratico-0`).
 
 ---
 
