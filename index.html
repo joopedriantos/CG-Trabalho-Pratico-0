@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>João Pedro | Perfil Dev</title>
   <link rel="stylesheet" href="styles.css">
+  <script src=""></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -12,15 +13,17 @@
 <body>
   <main class="container">
     <header class="perfil">
-      <img id="foto-perfil" src="./cavalo.jpeg" alt="Foto de perfil" class="avatar">
+      <img id="foto-perfil" src="./images/cavalo.jpeg" alt="Foto de perfil" class="avatar">
       <h1>Olá, me chamo João Pedro 👋</h1>
       <p class="subtitulo">Estudante de Engenharia & Entusiasta de Desenvolvimento</p>
     </header>
 
     <section class="bio">
       <p>
-        Movido a café, código e resolução de problemas. Gosto de explorar 
-        desenvolvimento web, arquitetura de sistemas e gráficos interativos.
+    Desenvolvedor em formação movido a riffs de heavy metal, cultura automotiva 
+    e sessões de skate. Quando não estou resolvendo problemas no terminal ou otimizando 
+    linhas de código, estou aprendendo novas músicas, montando setups 
+   disputando partidas competitivas em games. Se não estiver fazendo nada disso, com certeza me encontrará em um show extremamente duvidoso...
       </p>
     </section>
 
@@ -35,12 +38,28 @@
         <div class="card">
           <span class="icone">🎮</span>
           <h3>Games & Lazer</h3>
-          <p>Partidas competitivas nas horas vagas e foco em side quests.</p>
+          <p>Partidas competitivas muito raramente, meu foco é em side quests. Fromsoftware lover S2</p>
         </div>
         <div class="card">
           <span class="icone">🎸</span>
           <h3>Música</h3>
-          <p>Rock, cifras no violão e fones sempre no volume máximo.</p>
+          <p>Cresci no metal mas nos ultimos anos ando meio emo</p>
+        </div>
+        <div class="card">
+          <span class="icone">🛹</span>
+          <h3>Skate</h3>
+          <p>Gosto mais do que sou bom, manobras mal feitas (e branço quebrado), mas o importante é a atitude. "Marginal alado"</p>
+        </div>
+        <div class="card">
+          <span class="icone">🐈</span>
+          <h3>Gatos</h3>
+          <p>Tenho uma gata chamada Agnes. Ela parece um pouco comigo (não gosta de nada)</p>
+          <img src="./images/Agnes.jpeg" alt="Foto de gato" class="avatar">
+        </div>
+        <div class="card">
+          <span class="icone">🏎️</span>
+          <h3>Automobilismo</h3>
+          <p>Amo carros e corridas, especialmente no estilo de rua, mas um circuito às vezes vai...</p>
         </div>
       </div>
     </section>
@@ -51,18 +70,6 @@
     </section>
   </main>
 
-  <script>
-    const botao = document.getElementById('btn-interativo');
-    const foto = document.getElementById('foto-perfil');
-    const statusTexto = document.getElementById('status-interacao');
-
-    botao.addEventListener('click', () => {
-      document.body.classList.toggle('modo-destaque');
-      statusTexto.classList.toggle('msg-visivel');
-      
-      // Exemplo: alterna a imagem se desejar
-      // foto.src = foto.src.includes('foto.jpg') ? 'foto-gato.jpg' : 'foto.jpg';
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
